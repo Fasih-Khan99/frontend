@@ -22,13 +22,18 @@
 - git clone https://github.com/Fasih-Khan99/frontend.git
  
 (2) Navigate to the project directory by running the following command in VS Code Terminal:
-- cd blog-viewer
+- cd frontend
 
-(3) Install the dependencies by running the following command in VS Code Terminal:
+(3) Move to Master branch by running the following commands in VS Code Terminal:
+- git branch -a
+- git checkout master
+- git pull origin master
+
+(4) Install the dependencies by running the following command in VS Code Terminal:
 - npm install
 
-(4) Run the Development Server by running the following command in VS Code Terminal:
+(5) Run the Development Server by running the following command in VS Code Terminal:
 - npm run dev
 
-(5) Open your browser and paste the following link:
+(6) Open your browser and paste the following link:
 - http://localhost:1000/
