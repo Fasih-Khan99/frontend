@@ -7,6 +7,11 @@
 - Display full posts when a title is clicked.
 - Search/filter blog posts by title.
 
+## Tech Stack
+- React.js
+- Tailwind CSS
+
+
 ## Prerequisites
 ## Make sure you have the following installed:
 - Node.js (version 14 or later)
