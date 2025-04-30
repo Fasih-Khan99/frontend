@@ -1,0 +1,187 @@
+body {
+    margin: 0;
+    font-family: 'Inter', sans-serif;
+    line-height: 1.6;
+}
+
+.header {
+    display: flex;
+    justify-content: space-between;
+    padding: 1rem 2rem;
+    background-color: #222;
+    color: white;
+}
+
+.logo-img {
+    max-width: 140px;
+    width: 100%;
+    height: auto;
+}
+
+.nav a {
+    color: white;
+    margin-left: 1rem;
+    text-decoration: none;
+}
+
+.nav {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+/* Hide menu button by default */
+.menu-toggle {
+    display: none;
+    background: none;
+    border: none;
+    font-size: 28px;
+    color: #fff;
+    cursor: pointer;
+}
+
+.hero {
+    padding: 3rem 2rem;
+    text-align: center;
+    background: #f4f4f4;
+}
+
+.hero h1 {
+    font-size: 2.5rem;
+    text-wrap: nowrap;
+}
+
+.hero p {
+    font-size: 1.5rem;
+    color: red;
+}
+
+.hero button {
+    padding: 0.75rem 1.5rem;
+    font-size: 1rem;
+    background: rgb(5, 173, 5);
+    color: white;
+    border: none;
+    cursor: pointer;
+    border-radius: 50px;
+}
+
+.features {
+    padding: 2rem;
+}
+
+.services {
+    width: 100%;
+    text-align: center;
+    padding: 0.5rem;
+    margin-bottom: 0.5rem;
+}
+
+.card-container {
+    display: flex;
+    gap: 5rem;
+    flex-wrap: wrap;
+    justify-content: center;
+}
+
+.services h1 {
+    font-size: 2.5rem;
+    text-align: center;
+    margin-bottom: 2rem;
+}
+
+.card {
+    width: 80%;
+    max-width: 300px;
+    margin: 1rem 0;
+    padding: 1rem;
+    background-color: #f2f2f2;
+    border-radius: 8px;
+    text-align: center;
+}
+
+.card p {
+    font-size: 16px;
+    margin: 10px 0;
+    color: #333;
+    text-align: center;
+}
+
+.footer {
+    text-align: center;
+    padding: 2rem;
+    background: #222;
+    color: white;
+}
+
+.social-media h1 {
+    font-size: 2rem;
+    margin-bottom: 1rem;
+}
+
+.icons a {
+    margin: 0 10px;
+    display: inline-block;
+}
+
+.icons img {
+    width: 40px;
+    height: 40px;
+}
+
+/*max-width: 768 for iPads/Tablets   */
+@media (max-width: 768px) {
+    .features {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .hero h1 {
+        font-size: 1.6rem;
+        text-wrap: nowrap;
+    }
+
+    .hero p {
+        font-size: 1.4rem;
+        color: red;
+    }
+
+    .menu-toggle {
+        display: block;
+        margin-left: 260px;
+    }
+
+    .logo-img {
+        max-width: 120px;
+    }
+
+    .nav-links {
+        left: 0;
+        width: 100%;
+        text-align: center;
+        display: none;
+        flex-direction: column;
+        background: #222;
+        position: absolute;
+        top: 60px;
+        padding: 10px 0px;
+        z-index: 1000;
+        gap: 10px;
+        text-decoration: none;
+    }
+
+    .nav-links.show {
+        display: flex;
+    }
+
+    .nav {
+        display: flex;
+        flex-direction: column;
+        align-items: flex-end;
+    }
+
+    .icons img {
+        width: 30px;
+        height: 30px;
+    }
+}
